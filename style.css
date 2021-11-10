@@ -1,13 +1,19 @@
 h1{ 
-font-family: lust,serif;
-font-weight: 700;
-font-style: normal;
-font-size: larger;
+    font-family: lust,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
 } 
 
 h2{
-font-family: lust,serif;
-font-weight: 700;
-font-style: normal;
-font-size: medium;
+    font-family: lust,serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: medium;
+}
+
+p{
+    font-family: komet,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
