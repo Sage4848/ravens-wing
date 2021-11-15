@@ -2,7 +2,7 @@ h1{
     font-family: lust,serif;
     font-weight: 700;
     font-style: normal;
-    font-size: large;
+    font-size: larger;
     color: rgb(96,99,128);
 } 
 
@@ -31,22 +31,24 @@ body {background-color: rgb(251,243,238);}
   /* Navigation links */
   .navbar a {
     float: left;
-    padding: 12px;
     color: white;
     text-decoration: none;
     font-size: 17px;
-    width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    padding: 8 px; 
+    width: 10%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
   
   /* Add a background color on mouse-over */
   .navbar a:hover {
-    background-color:  rgb(96,99,128);
+    background-color:  rgb(213,186,190)
+    ;
 }
   
   /* Style the current/active link */
   .navbar a.active {
-    background-color: #04AA6D;
+    border-bottom: 3px solid rgb(96,99,128);
+    
   }
   
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
@@ -55,6 +57,6 @@ body {background-color: rgb(251,243,238);}
       float: none;
       display: block;
       width: 100%;
-      text-align: left; /* If you want the text to be left-aligned on small screens */
+      text-align: center; /* If you want the text to be left-aligned on small screens */
     }
   }
