@@ -21,3 +21,8 @@ p{
 }
 
 body {background-color: rgb(251,243,238);}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+  }
