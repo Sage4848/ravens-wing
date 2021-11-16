@@ -1,3 +1,5 @@
+*{ box-sizing: border-box; }
+
 h1{ 
     font-family: lust,serif;
     font-weight: 700;
@@ -39,9 +41,7 @@ body {background-color: rgb(251,243,238);
 .navbar {
     width: 100%;
     overflow: auto;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+    display: flex;
   }
   
   /* Navigation links */
@@ -115,10 +115,9 @@ input[type=submit] {
     font-style: normal;
   }
 
-.two-colum{ display: flex;
-}
-
-.two-colum { 
-  flex: 50%;
-  padding: 16px
-   }
+  .two-colum{ display: flex;
+    flex-wrap: wrap;
+  }
+  .two-colum  div { 
+    flex: 50%;
+  }
