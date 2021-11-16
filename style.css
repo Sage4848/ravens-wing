@@ -121,3 +121,7 @@ input[type=submit] {
   .two-colum  div { 
     flex: 50%;
   }
+
+  .book{
+    display: flex;
+  }
