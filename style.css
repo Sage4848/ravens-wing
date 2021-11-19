@@ -34,7 +34,23 @@ body {background-color: rgb(251,243,238);
 }
 
 .blogtext{
+  text-align: justify;
   font-size: 14px;
+  padding-top: 50px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+  padding-left: 500px;
+}
+
+.blog{
+  padding-top: 70px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.headerblog{
+  font-size: 36px;
 }
 
 /* Style the navigation menu */
