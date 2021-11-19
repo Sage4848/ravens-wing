@@ -33,26 +33,6 @@ p{
 body {background-color: rgb(251,243,238);
 }
 
-.blogtext{
-  text-align: justify;
-  font-size: 14px;
-  padding-top: 50px;
-  padding-right: 60px;
-  padding-bottom: 50px;
-  padding-left: 500px;
-}
-
-.blog{
-  padding-top: 70px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-}
-
-.headerblog{
-  font-size: 36px;
-}
-
 /* Style the navigation menu */
 .navbar {
     width: 100%;
@@ -148,4 +128,59 @@ input[type=submit] {
 
   .shop {
     display: flex;
+  }
+
+    /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
   }
