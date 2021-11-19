@@ -125,3 +125,11 @@ input[type=submit] {
   .book{
     display: flex;
   }
+
+  .shop-size {
+    size: 50%; 
+  }
+
+  .shop {
+    display: flex;
+  }
