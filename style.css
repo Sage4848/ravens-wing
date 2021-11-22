@@ -120,12 +120,22 @@ input[type=submit] {
 
   .book{
     display: flex;
+    width: 250px;
+    height: 250px;
+  }
+
+  .book :hover{
+    background-color: rgb(213,186,190);
   }
 
   .shop {
     display: flex;
     width: 200px;
     height: 200px;
+  }
+
+  .shop :hover{
+    color: solid rgb(213,186,190);
   }
 
     /* Header/Blog Title */
@@ -178,4 +188,4 @@ input[type=submit] {
       padding: 0;
     }
   }
-  
+
