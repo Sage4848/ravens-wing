@@ -122,12 +122,10 @@ input[type=submit] {
     display: flex;
   }
 
-  .shop-size {
-    size: 50%; 
-  }
-
   .shop {
     display: flex;
+    width: 200px;
+    height: 200px;
   }
 
     /* Header/Blog Title */
@@ -155,14 +153,9 @@ input[type=submit] {
   .fakeimg {
     width: 100%;
     padding: 20px;
+    word-wrap: break-word;
   }
-  
-  /* Add a card effect for articles */
-  .card {
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -176,7 +169,8 @@ input[type=submit] {
     text-align: center;
     margin-top: 20px;
   }
-  
+ 
+
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
@@ -184,3 +178,4 @@ input[type=submit] {
       padding: 0;
     }
   }
+  
