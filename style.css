@@ -38,8 +38,20 @@ body {background-color: rgb(251,243,238);
     width: 100%;
     overflow: auto;
     display: flex;
+    justify-content: center;
   }
   
+  .homegrid{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-gap: 40px;
+  }
+
+  .homegrid .center{
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+  }
+
   /* Navigation links */
   .navbar a {
     float: left;
@@ -60,16 +72,6 @@ body {background-color: rgb(251,243,238);
   .navbar a.active {
     border-bottom: 3px solid rgb(96,99,128);
     
-  }
-  
-  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: center; /* If you want the text to be left-aligned on small screens */
-    }
   }
 
   /* Style inputs with type="text", select elements and textareas */
@@ -188,4 +190,14 @@ input[type=submit] {
       padding: 0;
     }
   }
+
+    /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center; /* If you want the text to be left-aligned on small screens */
+      }
+    }
 
