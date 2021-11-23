@@ -1,5 +1,8 @@
-*{ box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
+<<<<<<< HEAD
 h1{ 
     font-family: lust,serif;
     font-weight: 700;
@@ -7,34 +10,48 @@ h1{
     font-size: x-large;
     color: rgb(96,99,128);
 } 
+=======
+img {
+  width: 100%;
+}
+h1 {
+  font-family: lust, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: larger;
+  color: rgb(96, 99, 128);
+}
+>>>>>>> e8c3312ccf9db6c198b3761213d52aff15c0d469
 
-h2{
-    font-family: lust,serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: medium;
-    color: rgb(96,99,128);
+h2 {
+  font-family: lust, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: medium;
+  color: rgb(96, 99, 128);
 }
 
-h3{
-    font-family: komet,sans-serif;
-    font-weight: 400;
-    font-style: medium;
-    color: rgb(96,99,128);
+h3 {
+  font-family: komet, sans-serif;
+  font-weight: 400;
+  font-style: medium;
+  color: rgb(96, 99, 128);
 }
 
-p{
-    font-family: komet,sans-serif;
-    font-weight: 400;
-    font-style: 24px;
-    color: rgb(96,99,128);
+p {
+  font-family: komet, sans-serif;
+  font-weight: 400;
+  font-style: 24px;
+  color: rgb(96, 99, 128);
 }
 
-body {background-color: rgb(251,243,238);
+body {
+  background-color: rgb(251, 243, 238);
 }
 
 /* Style the navigation menu */
 .navbar {
+<<<<<<< HEAD
     width: 100%;
     overflow: auto;
     display: flex;
@@ -79,123 +96,176 @@ body {background-color: rgb(251,243,238);
     border-bottom: 3px solid rgb(96,99,128);
     
   }
-
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    font-family: komet,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid rgb(96,99,128); /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: rgb(96,99,128);
-    color:  rgb(251,243,238);
-    font-family: lust,serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: small;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+=======
+  width: 100%;
+  overflow: auto;
+  display: flex;
 }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color:   rgb(251,243,238);
-    padding: 20px;
-    font-family: komet,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+>>>>>>> e8c3312ccf9db6c198b3761213d52aff15c0d469
 
-  .two-colum{ display: flex;
-    flex-wrap: wrap;
-  }
-  .two-colum  div { 
-    flex: 50%;
-  }
+/* Navigation links */
+.navbar a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 8 px;
+  width: 10%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
 
-  .book{
-    display: flex;
-    width: 250px;
-    height: 250px;
-  }
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: rgb(213, 186, 190);
+}
 
-  .book :hover{
-    background-color: rgb(213,186,190);
-  }
+/* Style the current/active link */
+.navbar a.active {
+  border-bottom: 3px solid rgb(96, 99, 128);
+}
 
-  .shop {
-    display: flex;
-    width: 200px;
-    height: 200px;
-  }
+.homegrid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 40px;
+}
 
-  .shop :hover{
-    color: solid rgb(213,186,190);
-  }
+.homegrid .center {
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+}
+.homegrid .left {
+  justify-content: end;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  font-family: komet, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid rgb(96, 99, 128); /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-    /* Header/Blog Title */
-  .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: rgb(96, 99, 128);
+  color: rgb(251, 243, 238);
+  font-family: lust, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: small;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: rgb(251, 243, 238);
+  padding: 20px;
+  font-family: komet, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.two-colum {
+  display: flex;
+  flex-wrap: wrap;
+}
+.two-colum div {
+  flex: 50%;
+}
+
+.book {
+  display: flex;
+  width: 250px;
+  height: 250px;
+}
+
+.book :hover {
+  background-color: rgb(213, 186, 190);
+}
+
+.shop {
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+.shop :hover {
+  color: solid rgb(213, 186, 190);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
     width: 100%;
-    padding: 20px;
-    word-wrap: break-word;
+    text-align: center; /* If you want the text to be left-aligned on small screens */
   }
+}
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
   }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-  }
- 
-
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-  }
+<<<<<<< HEAD
 
     /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
     @media screen and (max-width: 500px) {
@@ -207,3 +277,6 @@ input[type=submit] {
       }
     }
 
+=======
+}
+>>>>>>> e8c3312ccf9db6c198b3761213d52aff15c0d469
