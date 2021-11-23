@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 h1{ 
     font-family: lust,serif;
     font-weight: 700;
@@ -10,7 +9,6 @@ h1{
     font-size: x-large;
     color: rgb(96,99,128);
 } 
-=======
 img {
   width: 100%;
 }
@@ -21,7 +19,6 @@ h1 {
   font-size: larger;
   color: rgb(96, 99, 128);
 }
->>>>>>> e8c3312ccf9db6c198b3761213d52aff15c0d469
 
 h2 {
   font-family: lust, serif;
@@ -51,7 +48,6 @@ body {
 
 /* Style the navigation menu */
 .navbar {
-<<<<<<< HEAD
     width: 100%;
     overflow: auto;
     display: flex;
@@ -72,6 +68,11 @@ body {
   .homegrid .left{
     justify-content: end;
     text-align: right;
+    font-size: xx-large;
+  }
+  .homegrid .right{
+    justify-content: end;
+    text-align: left;
     font-size: xx-large;
   }
 
@@ -96,12 +97,10 @@ body {
     border-bottom: 3px solid rgb(96,99,128);
     
   }
-=======
   width: 100%;
   overflow: auto;
   display: flex;
 }
->>>>>>> e8c3312ccf9db6c198b3761213d52aff15c0d469
 
 /* Navigation links */
 .navbar a {
@@ -265,7 +264,6 @@ input[type="submit"] {
     width: 100%;
     padding: 0;
   }
-<<<<<<< HEAD
 
     /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
     @media screen and (max-width: 500px) {
@@ -276,7 +274,3 @@ input[type="submit"] {
         text-align: center; /* If you want the text to be left-aligned on small screens */
       }
     }
-
-=======
-}
->>>>>>> e8c3312ccf9db6c198b3761213d52aff15c0d469
