@@ -4,7 +4,7 @@ h1{
     font-family: lust,serif;
     font-weight: 700;
     font-style: normal;
-    font-size: larger;
+    font-size: x-large;
     color: rgb(96,99,128);
 } 
 
@@ -50,6 +50,12 @@ body {background-color: rgb(251,243,238);
   .homegrid .center{
     grid-row: 1 / 4;
     grid-column: 2 / 3;
+  }
+
+  .homegrid .left{
+    justify-content: end;
+    text-align: right;
+    font-size: xx-large;
   }
 
   /* Navigation links */
