@@ -268,8 +268,41 @@ input[type="submit"] {
   margin-top: 20px;
 }
 
+.star2{
+  animation: star 5s ease reverse forwards infinite;
+}
+
 .star1{
-  
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star3{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star4{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star5{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star6{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star7{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star8{
+  animation: star 5s ease reverse forwards infinite;
+}
+@keyframes star {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
