@@ -54,32 +54,6 @@ body {
     justify-content: center;
   }
   
-  .homegrid{
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-gap: 40px;
-  }
-
-  .homegrid .center{
-    grid-row: 1 / 4;
-    grid-column: 2 / 3;
-  }
-
-  .homegrid .centerbottom{
-    grid-row: 4 / 4;
-    grid-column: 2 / 3;
-  }
-
-  .homegrid .left{
-    justify-content: end;
-    text-align: right;
-    font-size: xx-large;
-  }
-  .homegrid .right{
-    justify-content: end;
-    text-align: left;
-    font-size: xx-large;
-  }
 
   /* Navigation links */
   .navbar a {
@@ -102,10 +76,6 @@ body {
     border-bottom: 3px solid rgb(96,99,128);
     
   }
-  width: 100%;
-  overflow: auto;
-  display: flex;
-}
 
 /* Navigation links */
 .navbar a {
@@ -128,19 +98,33 @@ body {
   border-bottom: 3px solid rgb(96, 99, 128);
 }
 
-.homegrid {
+.homegrid{
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 40px;
 }
 
-.homegrid .center {
+.homegrid .center{
   grid-row: 1 / 4;
   grid-column: 2 / 3;
 }
-.homegrid .left {
-  justify-content: end;
+
+.homegrid .centerbottom{
+  grid-row: 4 / 4;
+  grid-column: 2 / 3;
 }
+
+.homegrid .left{
+  justify-content: end;
+  text-align: right;
+  font-size: xx-large;
+}
+.homegrid .right{
+  justify-content: end;
+  text-align: left;
+  font-size: xx-large;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
@@ -200,15 +184,47 @@ input[type="submit"] {
   background-color: rgb(213, 186, 190);
 }
 
-.shop {
+.shopgrid{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 40px;
+}
+
+.shopgrid .shop1 {
   display: flex;
   width: 200px;
   height: 200px;
+  grid-row: 1 / 4;
+  grid-column: 2 / 5;
 }
 
-.shop :hover {
-  color: solid rgb(213, 186, 190);
+.shopgrid .shop2 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  grid-row: 2 / 4;
+  grid-column: 2 / 5;
 }
+
+.shopgrid .shop3 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  grid-row: 3 / 4;
+  grid-column: 2 / 5;
+}
+
+.shopgrid .left{
+  justify-content: end;
+  text-align: right;
+  font-size: xx-large;
+}
+.shopgrid .right{
+  justify-content: end;
+  text-align: left;
+  font-size: xx-large;
+}
+
 
 /* Header/Blog Title */
 .header {
@@ -252,16 +268,6 @@ input[type="submit"] {
   margin-top: 20px;
 }
 
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center; /* If you want the text to be left-aligned on small screens */
-  }
-}
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn,
@@ -278,4 +284,4 @@ input[type="submit"] {
         width: 100%;
         text-align: center; /* If you want the text to be left-aligned on small screens */
       }
-    }
+  }
