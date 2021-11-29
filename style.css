@@ -168,6 +168,29 @@ body {
 /* home page end */
 
 /* contact start */
+.contactgrid{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 40px;
+}
+
+.contactgrid.center{
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+}
+
+
+.contactgrid .left{
+  justify-content: end;
+  width: 122px; 
+  height: 111px;  
+}
+.contactgrid .right{
+  justify-content: end;
+  width: 122px; 
+  height: 111px;  
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
@@ -219,6 +242,30 @@ input[type="submit"] {
 /* contact end */
 
 /* bookings start */
+
+.bookgrid{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 40px;
+}
+
+.bookgrid .center{
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+}
+
+
+.bookgrid .left{
+  justify-content: end;
+  width: 122px; 
+  height: 111px;  
+}
+.bookgrid .right{
+  justify-content: end;
+  width: 122px; 
+  height: 111px;  
+}
+
 .book {
   display: flex;
   width: 250px;
@@ -263,18 +310,20 @@ input[type="submit"] {
 
 .shopgrid .left{
   justify-content: end;
-  text-align: right;
+  width: 122px; 
+  height: 111px;  
 }
 .shopgrid .right{
   justify-content: end;
-  text-align: left;
+  width: 122px; 
+  height: 111px;  
 }
 /* shop end */
 
 /* blog start */
 .bloggrid {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3% 33.3%;
+  grid-template-columns: 50% 50%;
   grid-gap: 40px;
 }
 
@@ -283,29 +332,29 @@ input[type="submit"] {
 .bloggrid .leftcolumn {
   float: left;
   width: 75%;
-  grid-row: 2 / 4;
-  grid-column: 2 / 4;
+  grid-row:  1 / 4;
+  grid-column: 1 / 2;
 }
 
 /* Right column */
 .bloggrid .rightcolumn {
-  float: left;
+  float: right;
   width: 25%;
   padding-left: 20px;
   grid-row: 2 / 4;
-  grid-column: 3 / 4;
+  grid-column: 2 / 2;
 }
 
 .bloggrid .left{
-  size: 122px;
   justify-content: end;
-  text-align: right;
+  width: 122px; 
+  height: 111px;  
 }
 
 .bloggrid .right{
-   size: 122px;
   justify-content: end;
-  text-align: left;
+  width: 122px; 
+  height: 111px;  
 }
 
 /* Header/Blog Title */
