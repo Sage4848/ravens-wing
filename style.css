@@ -1,3 +1,4 @@
+/* fonts and stuff start */
 * {
   box-sizing: border-box;
 }
@@ -97,6 +98,9 @@ body {
 .navbar a.active {
   border-bottom: 3px solid rgb(96, 99, 128);
 }
+/* fonts and stuff end */
+
+/* home page start */
 
 .homegrid{
   display: grid;
@@ -125,6 +129,45 @@ body {
   font-size: xx-large;
 }
 
+.star2{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star1{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star3{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star4{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star5{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star6{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star7{
+  animation: star 5s ease reverse forwards infinite;
+}
+
+.star8{
+  animation: star 5s ease reverse forwards infinite;
+}
+@keyframes star {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+/* home page end */
+
+/* contact start */
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
@@ -173,7 +216,9 @@ input[type="submit"] {
 .two-colum div {
   flex: 50%;
 }
+/* contact end */
 
+/* bookings start */
 .book {
   display: flex;
   width: 250px;
@@ -183,7 +228,9 @@ input[type="submit"] {
 .book :hover {
   background-color: rgb(213, 186, 190);
 }
+/* bookings end */
 
+/* shop start */
 .shopgrid{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -217,14 +264,49 @@ input[type="submit"] {
 .shopgrid .left{
   justify-content: end;
   text-align: right;
-  font-size: xx-large;
 }
 .shopgrid .right{
   justify-content: end;
   text-align: left;
-  font-size: xx-large;
+}
+/* shop end */
+
+/* blog start */
+.bloggrid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3% 33.3%;
+  grid-gap: 40px;
 }
 
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.bloggrid .leftcolumn {
+  float: left;
+  width: 75%;
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+}
+
+/* Right column */
+.bloggrid .rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  grid-row: 2 / 4;
+  grid-column: 3 / 4;
+}
+
+.bloggrid .left{
+  size: 122px;
+  justify-content: end;
+  text-align: right;
+}
+
+.bloggrid .right{
+   size: 122px;
+  justify-content: end;
+  text-align: left;
+}
 
 /* Header/Blog Title */
 .header {
@@ -233,32 +315,12 @@ input[type="submit"] {
   text-align: center;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
 /* Fake image */
+
 .fakeimg {
   width: 100%;
   padding: 20px;
   word-wrap: break-word;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Footer */
@@ -267,43 +329,7 @@ input[type="submit"] {
   text-align: center;
   margin-top: 20px;
 }
-
-.star2{
-  animation: star 5s ease reverse forwards infinite;
-}
-
-.star1{
-  animation: star 5s ease reverse forwards infinite;
-}
-
-.star3{
-  animation: star 5s ease reverse forwards infinite;
-}
-
-.star4{
-  animation: star 5s ease reverse forwards infinite;
-}
-
-.star5{
-  animation: star 5s ease reverse forwards infinite;
-}
-
-.star6{
-  animation: star 5s ease reverse forwards infinite;
-}
-
-.star7{
-  animation: star 5s ease reverse forwards infinite;
-}
-
-.star8{
-  animation: star 5s ease reverse forwards infinite;
-}
-@keyframes star {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
+/* blog end */
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
