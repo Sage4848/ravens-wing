@@ -1,82 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.typekit.net/nmf8lsj.css">
-    <link rel="stylesheet" href="https://use.typekit.net/nmf8lsj.css">
-    <title>Contact</title> 
-    
+    <link rel="stylesheet" href="https://use.typekit.net/nmf8lsj.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/nmf8lsj.css" />
+    <title>Contact</title>
+
     <!-- The navigation menu -->
-      <div class="navbar">
-        <a href="index.html"><h1> HOME </h1></a>  
-        <a href="shop.html"><h1> SHOP </h1></a>
-        <a href="bookings.html"><h1> BOOK A READING </h1></a>
-        <a class="active" href="contact.html"><h1> CONTACT </h1></a>
-        <a href="blog.html"><h1> BLOG </h1></a>
+    <div class="navbar">
+      <a href="index.html"><h1>HOME</h1></a>
+      <a href="shop.html"><h1>SHOP</h1></a>
+      <a href="bookings.html"><h1>BOOK A READING</h1></a>
+      <a class="active" href="contact.html"><h1>CONTACT</h1></a>
+      <a href="blog.html"><h1>BLOG</h1></a>
     </div>
-    
-</head>
-
-<main class="contactgrid">
-<body>
-
-    <div>
-        <img class="left" src="images/top_left.png"></img>
-        <img class="right" src="images/top_right.png"></img>
-        <img class="left" src="images/bottom_let.png"></img>
-        <img class="right" src="images/botom_right.png"></img>
-      </div>
-
- <main> 
-    <hr class="vertical"></hr>
-    
-    <div class="container">
-        <form action="thankyou.html">
-        
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="email"> Email</label>
-            <input type="text" id="email" name="email" placeholder="Email">
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        
-        </form>
+  </head>
+  <body>
+    <div class="star-placement">
+      <div><img class="left" src="images/top_left.png" /></div>
+      <div class="right"><img class="right" src="images/top_right.png" /></div>
+      <div><img class="left" src="images/bottom_let.png" /></div>
+      <div class="right"><img class="right" src="images/botom_right.png" /></div>
     </div>
+    <main>
+      <section class="bloggrid">
+        <div class="leftcolumn">
+          <p class="contacttext">Feel free to send us a note with your questions, comments, & requests.</p>
 
-    <p class="contacttext">
-        Feel free to send us a note with your questions, comments, & requests.
-    </p>
+          <br />
 
-    <br></br>
+          <p class="contacttext">Do you make products that you’d like to see in our stores? Tell us about them here!</p>
 
-    <p class="contacttext"> Do you make products that you’d like to see in our stores? Tell us about them here!</p>
-    
-    <hr></hr>
+          <hr />
 
-    <br></br>
+          <br />
 
-    <p class="contacttext">OAKLAND:
-        The Raven's Wing Magical Co. 
-        536 Grand Avenue Oakland, CA 94610
-        (510) 444-9355</p>
-    <br></br>
+          <p class="contacttext">OAKLAND: The Raven's Wing Magical Co. 536 Grand Avenue Oakland, CA 94610 (510) 444-9355</p>
+          <br />
 
-    <p class="contacttext">PORTLAND: 
-        The Raven's Wing Magical Co. 
-        7927 SE 13th Ave Portland, OR 97202 
-        (503) 946-8951</p>
+          <p class="contacttext">PORTLAND: The Raven's Wing Magical Co. 7927 SE 13th Ave Portland, OR 97202 (503) 946-8951</p>
+        </div>
+        <div class="rightcolumn hrpad">
+          <hr class="hrulevert" />
+          <div class="container">
+            <form action="thankyou.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
 
-</body>
-</main>
+              <label for="email"> Email</label>
+              <input type="text" id="email" name="email" placeholder="Email" />
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
