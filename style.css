@@ -170,15 +170,26 @@ body {
 /* contact start */
 .contactgrid{
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 50% 50%;
   grid-gap: 40px;
 }
 
-.contactgrid.center{
-  grid-row: 1 / 4;
-  grid-column: 2 / 3;
+/* Add a background color and some padding around the form */
+.contactgrid .container {
+  border-radius: 5px;
+  background-color: rgb(251, 243, 238);
+  padding: 20px;
+  font-family: komet, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
 }
 
+.contactgrid .contacttext{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
 
 .contactgrid .left{
   justify-content: end;
@@ -191,6 +202,11 @@ body {
   height: 111px;  
 }
 
+.vertical {
+  border-left: 1px solid rgb(96, 99, 128) ;
+  height: 100%;
+  position:absolute;
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
@@ -222,23 +238,6 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: rgb(251, 243, 238);
-  padding: 20px;
-  font-family: komet, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.two-colum {
-  display: flex;
-  flex-wrap: wrap;
-}
-.two-colum div {
-  flex: 50%;
-}
 /* contact end */
 
 /* bookings start */
