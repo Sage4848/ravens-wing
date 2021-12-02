@@ -296,35 +296,30 @@ input[type="submit"] {
 /* bookings end */
 
 /* shop start */
-.shopgrid{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+
+div.gallery {
+  margin: 40px;
+  float: left;
+  width: 280px;
+  text-align: center;
 }
 
-.shopgrid .shop1 {
-  width: 200px;
-  height: 200px;
-  grid-row: 1 / 4;
-  grid-column: 1/ 4;
-}
-
-
-.shopgrid .shop2 {
-  width: 200px;
-  height: 200px;
-  grid-row: 2 / 4;
-  grid-column: 2 / 4;
-}
-
-.shopgrid .shop3 {
-  width: 200px;
-  height: 200px;
-  grid-row: 3 / 4;
-  grid-column: 3 / 4;
-}
-
-.shopgrid .hover img:hover{
+div.gallery img:hover {
   transform: rotateY(180deg);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: justify;
+  font-family: komet, sans-serif;
+  font-weight: 400;
+  font-style: 24px;
+  color: rgb(96, 99, 128);
 }
 
 /* shop end */
