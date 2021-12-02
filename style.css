@@ -299,9 +299,8 @@ input[type="submit"] {
 
 div.gallery {
   margin: 40px;
-  float: left;
-  width: 280px;
   text-align: center;
+  flex: 18%;
 }
 
 div.gallery img:hover {
