@@ -388,16 +388,16 @@ input[type="submit"] {
 /* blog end */
 
 /* stars spin start */
-.homegrid .left:hover{
+.homegrid .left svg:hover{
   transition: transform .2s ease-in-out;
   transform: rotate(360deg);
 }
 
-.homegrid .right:hover{
+.homegrid .right svg:hover{
   transition: transform .2s ease-in-out;
   transform: rotate(360deg);
 }
-.homegrid .left:hover{
+.homegrid .left svg:hover{
   transition: transform .2s ease-in-out;
   transform: rotate(360deg);
 }
